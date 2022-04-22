@@ -19,3 +19,35 @@ header{
 button{
     margin-left: 1em;
 }
+
+/* MAIN */
+main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border: 3px solid black;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.square{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.bg-blue{
+    background-color: blue;
+}

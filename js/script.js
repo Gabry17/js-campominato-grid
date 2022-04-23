@@ -13,12 +13,13 @@ console.log(valInput);
 //passare arg alla funzione a seconda del valore selezionato
 let newArray;
 
+
 if(valInput === 'facile'){
     newArray = gridGame(100);
 } else if (valInput === 'avanzato') {
-    newArray = gridGame(80);
+    newArray = gridGame(81);
 } else if (valInput === 'difficile') {
-    newArray = gridGame(50)
+    newArray = gridGame(49)
 }
 //creare griglia
 //prendere elemento griglia html 
@@ -33,15 +34,26 @@ for(let i = 0; i < newArray.length; i++){
     div.classList.add('square');
     container.append(div);
 
+    if(valInput === 'facile'){
+        div.classList.add('alt10');
+    } else if (valInput === 'avanzato') {
+        div.classList.add('alt9');
+    } else if (valInput === 'difficile') {
+        div.classList.add('alt7');
+    }
+
     //al click di ogni casella aggiungere classe bg-blue
     div.addEventListener('click', function(){
         this.classList.add('bg-blue');
     })
 
+
     container.append(div);
 
 }
 }
+
+
 
 
 

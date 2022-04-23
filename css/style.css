@@ -39,12 +39,25 @@ main{
 }
 
 .square{
-    width: calc(100% / 10);
-    height: calc(600px / 10);
     display: flex;
     justify-content: center;
     align-items: center;
     border: 3px solid black;
+}
+
+.alt10{
+    width: calc(100% / 10);
+    height: calc(600px / 10);
+}
+
+.alt9{
+    width: calc(100% / 9);
+    height: calc(600px / 9);
+}
+
+.alt7{
+    width: calc(100% / 7);
+    height: calc(600px / 7);
 }
 
 .bg-blue{
